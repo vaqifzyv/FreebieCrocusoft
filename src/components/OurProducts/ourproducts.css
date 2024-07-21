@@ -1,0 +1,147 @@
+.features {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block: 100px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.feature img {
+  transform: scale(0.8);
+}
+
+.ourProductsBottomCenterText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourProductsCards {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-block: 32px;
+}
+
+.ourProductsCard {
+  background-color: #f4f5f7;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.ourProductsImg {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.ourProductsCard:hover {
+  transform: scale(1.05);
+}
+
+.ourProductsCardDescription {
+  height: 10%;
+}
+
+.hoverContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.ourProductsCard:hover .hoverContent {
+  opacity: 1;
+}
+
+.addToCartBtn {
+}
+
+.addToCartBtn:hover {
+  background-color: #926448 !important;
+  color: #fff;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+.socialIcons Button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+}
+
+.disStatus {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-weight: 300;
+}
+
+.cardStatus,
+.cardDiscount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e97171;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.cardStatus {
+  background-color: #2ec1ac;
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ourProductsCardName {
+  color: #3a3a3a;
+}
+
+.ourProductsCardDescription {
+  color: #898989;
+}
+
+.ourProductsCardBottom {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.discountPrice {
+  text-decoration: line-through;
+  color: #898989;
+}

@@ -1,0 +1,86 @@
+{
+  "ourProducts": [
+    {
+      "id": 1,
+      "name": "Syltherine",
+      "description": "Stylish cafe chair",
+      "price": "2.500.000",
+      "discounted_price": "3.500.000",
+      "discount": "30%",
+      "status": null,
+      "photo": "../src/assets/ourProductsPh1.png"
+    },
+    {
+      "id": 2,
+      "name": "Leviosa",
+      "description": "Stylish cafe chair",
+      "price": "2.500.000",
+      "discounted_price": null,
+      "discount": null,
+      "status": null,
+      "photo": "../src/assets/ourProductsPh2.png"
+    },
+    {
+      "id": 3,
+      "name": "Lolito",
+      "description": "Luxury big sofa",
+      "price": "7.000.000",
+      "discounted_price": "14.000.000",
+      "discount": "50%",
+      "status": null,
+      "photo": "../src/assets/ourProductsPh3.png"
+    },
+    {
+      "id": 4,
+      "name": "Respira",
+      "description": "Minimalist fan",
+      "price": "500.000",
+      "discounted_price": null,
+      "discount": null,
+      "status": "New",
+      "photo": "../src/assets/ourProductsPh4.png"
+    },
+    {
+      "id": 5,
+      "name": "Grifo",
+      "description": "Night lamp",
+      "price": "1.500.000",
+      "discounted_price": null,
+      "discount": null,
+      "status": null,
+      "photo": "../src/assets/ourProductsPh5.png"
+    },
+    {
+      "id": 6,
+      "name": "Muggo",
+      "description": "Small mug",
+      "price": "150.000",
+      "discounted_price": null,
+      "discount": null,
+      "status": "New",
+      "photo": "../src/assets/ourProductsPh6.png"
+    },
+    {
+      "id": 7,
+      "name": "Pingky",
+      "description": "Cute bed set",
+      "price": "7.000.000",
+      "discounted_price": "14.000.000",
+      "discount": "50%",
+      "status": null,
+      "photo": "../src/assets/ourProductsPh7.png"
+    },
+    {
+      "id": 8,
+      "name": "Potty",
+      "description": "Minimalist flower pot",
+      "price": "500.000",
+      "discounted_price": null,
+      "discount": null,
+      "status": "New",
+      "photo": "../src/assets/funiroPh7.png"
+    }
+  ],
+  "addedBasket": [],
+  "addedFav": []
+}

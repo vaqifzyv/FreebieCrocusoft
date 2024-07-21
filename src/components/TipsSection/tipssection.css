@@ -1,0 +1,54 @@
+.tipsSection {
+  padding: 20px;
+}
+
+.tipsSectionTop {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tipsSectionSlider {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slider-container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sliderItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.sliderItem:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.sliderPh img {
+  max-width: 100%;
+}
+
+.sliderText {
+  margin-top: 10px;
+}
+
+.sliderText h5 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sliderText p {
+  font-size: 14px;
+  color: #b6b6b6;
+  font-weight: 400;
+}
