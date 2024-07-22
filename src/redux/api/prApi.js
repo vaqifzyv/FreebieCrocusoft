@@ -14,11 +14,11 @@ export const prApi = createApi({
       },
     }),
     addProduct: build.mutation({
-      query(product) {
+      query(data) {
         return {
           url: "products",
           method: "POST",
-          body: product,
+          body: JSON.stringify(data),
         };
       },
     }),

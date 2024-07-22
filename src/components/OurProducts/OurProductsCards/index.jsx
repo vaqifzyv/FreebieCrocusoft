@@ -160,10 +160,9 @@
 // }
 
 // export default OurProductsCards;
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useGetProductsQuery } from "/src/redux/api/prApi.js";
+import { useGetProductsQuery } from "../../../redux/api/prApi";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
@@ -179,17 +178,22 @@ import {
   removeFromWishList,
 } from "../../../redux/features/Basket/index";
 
-function OurProductsCards({ products }) {
+function OurProductsCards() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const wishList = useSelector((state) => state.basket.wishList);
   const [open, setOpen] = React.useState(false);
 
+  const { data = [], isLoading, refetch } = useGetProductsQuery();
+
+  React.useEffect(() => {
+    refetch();
+  }, [refetch]);
+
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
       return;
     }
-
     setOpen(false);
   };
 
@@ -224,14 +228,12 @@ function OurProductsCards({ products }) {
     return wishList.some((item) => item.id === productId);
   };
 
-  const { data = [], isLoading } = useGetProductsQuery();
-
   if (isLoading) return <h1>{"loading"}</h1>;
 
   const handleCardClick = (id) => {
     navigate(`/product/${id}`);
   };
-
+  console.log(data);
   return (
     <div className="ourProductsBottom">
       <Typography
