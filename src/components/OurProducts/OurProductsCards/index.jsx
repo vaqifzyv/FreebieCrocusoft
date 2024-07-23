@@ -184,11 +184,7 @@ function OurProductsCards() {
   const wishList = useSelector((state) => state.basket.wishList);
   const [open, setOpen] = React.useState(false);
 
-  const { data = [], isLoading, refetch } = useGetProductsQuery();
-
-  React.useEffect(() => {
-    refetch();
-  }, [refetch]);
+  const { data = [], isLoading } = useGetProductsQuery();
 
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {

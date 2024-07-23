@@ -14,11 +14,12 @@ export const prApi = createApi({
       },
     }),
     addProduct: build.mutation({
-      query(data) {
+      query(formData) {
+        console.log(formData, "gelen data");
         return {
           url: "products",
           method: "POST",
-          body: JSON.stringify(data),
+          body: JSON.stringify(formData),
         };
       },
     }),
